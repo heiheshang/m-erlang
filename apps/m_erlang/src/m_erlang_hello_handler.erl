@@ -1,5 +1,5 @@
 -module(m_erlang_hello_handler).
--behaviour(cowboy_handler).
+%%-behaviour(cowboy_handler).
 -export([init/3]).
 
 init(Req0, _Transport, Opts) ->

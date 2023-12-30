@@ -1,8 +1,8 @@
 -module(m_erlang_handshake_handler).
--behaviour(cowboy_handler).
+%%-behaviour(cowboy_handler).
 -export([init/3]).
 
-init(Req0, Transport, Opts) ->
+init(Req0, _Transport, Opts) ->
     io:format("Handshake handler received a request~n"),
     {ok, Body, Req} = cowboy_req:read_body(Req0),
     BodyText = binary_to_list(Body),

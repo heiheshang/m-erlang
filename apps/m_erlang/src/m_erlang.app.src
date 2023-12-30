@@ -9,6 +9,7 @@
     cowboy
    ]},
   {env,[]},
+  {build_tools,["rebar3"]},
   {modules, []},
   {maintainers, []},
   {licenses, []},
